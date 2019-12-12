@@ -1,0 +1,35 @@
+CXX = g++
+INCLUDING += -I../app -ICatch2
+CXXFLAGS = -std=c++14 -g -Wall -Wextra -Wpedantic $(INCLUDING)
+
+EXECUTABLE = testCatch2
+SOURCES = $(wildcard *.cpp) \
+          ../app/functions.c
+HEADERS = $(wildcard *.h) \
+          ../app/functions.h \
+          Catch2/catch.hpp
+OBJECTS := $(SOURCES:.c=.o)
+OBJECTS := $(OBJECTS:.cpp=.o)
+
+.PHONY: all
+all: $(EXECUTABLE)
+
+-include depend
+
+$(EXECUTABLE): $(OBJECTS)
+	echo "Objects = " $(OBJECTS)
+	$(CXX) $(CXXFLAGS) $(OBJECTS) $(CLIBS) -o $@
+
+# Create dependency file
+depend: $(SOURCES)
+	$(CXX) -MM $(CXXFLAGS) $^ > $@
+
+# Create a clean environment
+.PHONY: clean
+clean:
+	$(RM) $(EXECUTABLE) $(OBJECTS)
+
+# Clean up dependency file
+.PHONY: clean-depend
+clean-depend: clean
+	$(RM) depend
