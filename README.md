@@ -15,8 +15,9 @@ Or compiling a Qt project by the command line, this also will create the related
     $ qmake
     $ make
 
-To avoid the overwriting of a self-coded GNU Makefile, we choose the name Makefile2.
-Compiling a **GNU make** project and the related *Makefile2* for gcc compiling C99:
+To avoid the overwriting of a self-coded GNU Makefile by a QtCreator build step, we choose the name **Makefile2**.
+
+Compiling a GNU make project and the related **Makefile2** for gcc compiling C99:
 
     $ make -f Makefile2
 
