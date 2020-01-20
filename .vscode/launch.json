@@ -5,6 +5,44 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "checkStrings",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/checkStrings/app/checkStrings",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/checkStrings/app/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "deepcopy",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/deepcopy/deepcopy",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/deepcopy",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
             "name": "qsort",
             "type": "cppdbg",
             "request": "launch",
