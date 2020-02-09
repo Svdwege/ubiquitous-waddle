@@ -60,7 +60,7 @@ int compareDoubles(double d1, double d2)
    return 0;
 }
 
-/* callback function for qsort */
+/* Callback function for qsort */
 int compareData(const void *pD1, const void *pD2)
 {
    const data_t *pData1 = (const data_t*)pD1;
@@ -69,12 +69,6 @@ int compareData(const void *pD1, const void *pD2)
    if ((pData1->iData) == (pData2->iData))
    {
       return compareDoubles(pData1->dData, pData2->dData);
-      /* Next return is not correct for doubles, result is converted to int
-       * return pData1->dData - pData2->dData;
-       */
    }
-   return (pData1->iData) - (pData2->iData);
-   /* Or using compareInts()
-    * return compareInts(pData1->iData, pData2->iData);
-    */
+   return compareInts(pData1->iData, pData2->iData);
 }
