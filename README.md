@@ -1,13 +1,10 @@
 # Advanced C
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b4b152e81db44d2e9453eb3350311701)](https://www.codacy.com/project/josokw/AdvancedC/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=josokw/AdvancedC&amp;utm_campaign=Badge_Grade_Dashboard)
-[![CodeFactor](https://www.codefactor.io/repository/github/josokw/advancedc/badge/master)](https://www.codefactor.io/repository/github/josokw/advancedc/overview/master)
-
 ## Intermediate level programming
 
-The code examples are used for teaching C programming at an intermediate level.
+The code examples are used for teaching **C programming** at an intermediate level.
 
-Each example is compilable using QtCreator by opening the related *.pro*
+Each example is compilable using QtCreator by opening the related **.pro**
 file. This will create the related **Makefile** file.  
 
 Or compiling a Qt project by the command line, this also will create the related **Makefile** file:
@@ -31,3 +28,8 @@ Some unit test code examples are available:
 ## Debugging in Visual Studio Code: gdb
 
 In every Makefile or Makefile2 the compiler flag *-g* is used. Some *gdb* launches are available in *.vscode/launch.json*.
+
+## Book and excercises
+
+The related book **Advanced C** is in pdf format available.
+Book exercises are partly prepared in code directories available.
