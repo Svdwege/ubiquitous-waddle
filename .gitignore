@@ -122,3 +122,5 @@ functions/testUnity/testUnity
 compare/compare
 checkStrings/app/checkStrings
 checkStrings/test/checkStrings-test
+
+BookExercises/Exercise-*/excs*
