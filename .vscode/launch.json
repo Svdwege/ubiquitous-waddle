@@ -5,6 +5,63 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "excs-1.1",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/BookExercises/Exercise-1.1/excs-1.1",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/BookExercises/Exercise-1.1",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFail./   ures": true
+                }
+            ]
+        },
+        {
+            "name": "excs-1.2",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/BookExercises/Exercise-1.2/excs-1.2",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/BookExercises/Exercise-1.2",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFail./   ures": true
+                }
+            ]
+        },
+        {
+            "name": "excs-1.3",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/BookExercises/Exercise-1.3/excs-1.3",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/BookExercises/Exercise-1.3",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFail./   ures": true
+                }
+            ]
+        },
+        {
             "name": "checkStrings",
             "type": "cppdbg",
             "request": "launch",
