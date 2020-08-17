@@ -27,9 +27,10 @@ Some unit test code examples are available:
 
 ## Debugging in Visual Studio Code: gdb
 
-In every Makefile or Makefile2 the compiler flag *-g* is used. Some *gdb* launches are available in *.vscode/launch.json*.
+In every Makefile or Makefile2 the compiler flag *-g* is used. 
+Some *gdb* launches are available in [launch.json](.vscode/launch.json).
 
 ## Book and excercises
 
-The related book **Advanced C** is in pdf format available.
-Book exercises are partly prepared in code directories available.
+The related book [Advanced C v2.0](BookExercises/AdvancedC-v2.0.pdf) is in pdf format available.
+Book exercises are partly prepared in the [BookExercises](BookExercises) subdirectory.
