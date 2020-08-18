@@ -9,15 +9,22 @@ Use for floating point values: float, do no use double.
 
 \section sec1 Compiling
 
-This application must be compiled by a makefile using the make command 
-executing \link Makefile \endlink.
+Go to the **app** dir. 
+This application can be compiled by a makefile using the make command:
+
+```
+
+make -f Makefile2
+
+```
 
 \section sec2 Executing
 
-Use the next command to start the application.
+Use the next command in the **app** dir to start the application:
 
-\verbatim ./introUTfunctions
-\endverbatim
+```
+./functions
+```
 
 The application will show some calculated data (printed to stdout).
 
