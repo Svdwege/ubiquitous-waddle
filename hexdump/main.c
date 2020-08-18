@@ -39,11 +39,10 @@ int isLittleEndian(void)
 
 void hexdumpInt(int data)
 {
-   size_t i = 0;
    const unsigned char *pData = (const unsigned char *)&data;
 
    printf("%10d = ", data);
-   for (i = 0; i < sizeof(int); i++)
+   for (size_t i = 0; i < sizeof(int); i++)
    {
       printf("%02x ", pData[i]);
    }

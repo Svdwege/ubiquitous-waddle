@@ -19,15 +19,13 @@ int main(void)
    };
    char buffer[50] = {'\0'};
 
-   int i = 0;
-
-   for (i = 0; i < 5; i++)
+   for (int i = 0; i < 5; i++)
    {
       trim(buffer, testInts[i]);
       printf("Test \"%s\" is int = %d\n", buffer, isInteger(buffer));
    }
 
-   for (i = 0; i < 5; i++)
+   for (int i = 0; i < 5; i++)
    {
       trim(buffer, testMACaddresses[i]);
       printf("Test \"%s\" is MAC address = %s\n",

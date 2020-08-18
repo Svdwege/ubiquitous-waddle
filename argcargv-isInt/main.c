@@ -8,7 +8,6 @@ bool isInt(const char str[]);
 
 int main(int argc, char *argv[])
 {
-   int i = 0;
    int sum = 0;
    bool allAreIntegers = true;
 
@@ -24,7 +23,7 @@ int main(int argc, char *argv[])
    }
 
    /* Add all integer values found in the commandline */
-   for (i = 1; i < argc; i++)
+   for (int i = 1; i < argc; i++)
    {
       if (!isInt(argv[i]))
       {
@@ -42,7 +41,7 @@ int main(int argc, char *argv[])
    }
 
    /* Add all integer values found in the commandline */
-   for (i = 1; i < argc; i++)
+   for (int i = 1; i < argc; i++)
    {
       sum += atoi(argv[i]);
    }

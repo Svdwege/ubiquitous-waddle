@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <tgmath.h>
 
-int main()
+int main(void)
 {
    double complex z1 = 1.0 + 3.0 * I;
    double complex z2 = 1.0 - 4.0 * I;

@@ -52,11 +52,11 @@ int emptyQueue(const queue_t *pQueue);
  */
 size_t sizeQueue(const queue_t *pQueue);
 /*!
- * \return ointer to the front node data of the queue.
+ * \return pointer to the front node data of the queue.
  */
 data_t *frontQueue(const queue_t *pQueue);
 /*!
- * \return Pointer to the front node data of the queue.
+ * \return pointer to the front node data of the queue.
  */
 data_t *backQueue(const queue_t *pQueue);
 /*!

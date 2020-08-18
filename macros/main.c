@@ -9,13 +9,13 @@
 #define SQR(x) ((x) * (x))
 #define PRINT_VALUE(format, var) printf("%s = %" #format "\n", #var, var)
 
-/* Multi line macro */
+/* Multi line macro, use \ */
 #define TEST(condition)                                                   \
    if (!(condition))                                                      \
    fprintf(stderr, "TEST '" #condition "' is not satisfied\n")
 
 /* C99 variadic macros: macros may have variable number of arguments */
-#define WARNING(...) fprintf(stderr, __VA_ARGS__)
+#define WARNING(...) fprintf(stderr, "Warning: " __VA_ARGS__)
 
 int main(void)
 {
@@ -27,7 +27,10 @@ int main(void)
    double v = SQR(1.1);  /* double v = (1.1) * (1.1); */
 
    /* Standard predefined macros */
-   printf("Code compiled: %s %s  file: %s,\n\tline: %d in function: '%s'\n\n",
+   printf("C standard version is %ld\n", __STDC_VERSION__);
+   printf("Code compiled: %s %s\n"
+          "         file: %s\n"
+          "         line: %d in function: '%s'\n\n",
           __DATE__, __TIME__, __FILE__, __LINE__, __func__);
 
    PRINT_VALUE(d, SQR(10));
@@ -44,7 +47,7 @@ int main(void)
    puts("");
 
    PRINT_VALUE(d, SQR(SQR(3)));
-   WARNING("Macros can become complex: %d\n", SQR(SQR(3)));
+   WARNING("Macros can become complex, result %d\n", SQR(SQR(3)));
 
    return 0;
 }

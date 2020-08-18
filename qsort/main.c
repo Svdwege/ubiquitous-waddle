@@ -16,7 +16,6 @@ int compareData(const void *pD1, const void *pD2);
 
 int main(void)
 {
-   int i = 0;
    data_t data[SIZE] = {
      {2, 10.1},
      {2, 30.2},
@@ -26,7 +25,7 @@ int main(void)
    };
 
    printf("---- Not sorted:\n");
-   for (i = 0; i < SIZE; i++)
+   for (int i = 0; i < SIZE; i++)
    {
       printf("data[%d] = {%2d, %7.3lf}\n", i, data[i].iData, data[i].dData);
    }
@@ -37,7 +36,7 @@ int main(void)
    qsort(data, SIZE, sizeof(data_t), compareData);
 
    printf("-------- Sorted:\n");
-   for (i = 0; i < SIZE; i++)
+   for (int i = 0; i < SIZE; i++)
    {
       printf("data[%d] = {%2d, %7.3lf}\n", i, data[i].iData, data[i].dData);
    }
@@ -60,7 +59,7 @@ int compareDoubles(double d1, double d2)
    return 0;
 }
 
-/* Callback function for qsort */
+/* callback function for qsort */
 int compareData(const void *pD1, const void *pD2)
 {
    const data_t *pData1 = (const data_t*)pD1;
@@ -69,6 +68,12 @@ int compareData(const void *pD1, const void *pD2)
    if ((pData1->iData) == (pData2->iData))
    {
       return compareDoubles(pData1->dData, pData2->dData);
+      /* Next return is not correct for doubles, result is converted to int
+       * return pData1->dData - pData2->dData;
+       */
    }
-   return compareInts(pData1->iData, pData2->iData);
+   return (pData1->iData) - (pData2->iData);
+   /* Or using compareInts()
+    * return compareInts(pData1->iData, pData2->iData);
+    */
 }

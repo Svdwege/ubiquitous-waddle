@@ -29,9 +29,8 @@ void trim(char dest[], const char scr[])
 bool isInteger(const char str[])
 {
    bool isOK = true;
-   size_t i = 0;
 
-   for (i = 0; i < strlen(str); i++)
+   for (size_t i = 0; i < strlen(str); i++)
    {
       if (!isdigit(str[i]))
       {

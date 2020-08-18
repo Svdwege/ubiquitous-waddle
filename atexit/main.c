@@ -6,12 +6,10 @@ int calculate(int x);
 
 int main(void)
 {
-   int input = 0;
-
    printf("Function set to be executed on exit (if program terminates)\n");
    atexit(shutdown);
 
-   for (input = -5; input < 20; input++)
+   for (int input = -5; input < 20; input++)
    {
       printf("-- Calculating %d\n", calculate(input));
    }

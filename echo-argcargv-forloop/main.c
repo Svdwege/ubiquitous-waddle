@@ -14,8 +14,6 @@
 
 int main(int argc, char *argv[])
 {
-   int i = 0;
-
    /* Always check the number of required arguments */
    if (argc < 2)
    {
@@ -28,7 +26,7 @@ int main(int argc, char *argv[])
    }
 
    /* Print all command line arguments */
-   for (i = 1; i < argc; i++)
+   for (int i = 1; i < argc; i++)
    {
       printf("- argv[%d]: %s\n", i, argv[i]);
    }
@@ -36,7 +34,7 @@ int main(int argc, char *argv[])
 
    /* Print the third character of all command line arguments if available
     */
-   for (i = 1; i < argc; i++)
+   for (int i = 1; i < argc; i++)
    {
       /* Check for availability third character */
       if (strlen(argv[i]) > 2)

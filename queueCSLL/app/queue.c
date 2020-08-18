@@ -82,7 +82,6 @@ void deleteQueue(queue_t *pQueue)
 {
    /* local pointer for traversing all nodes in queue */
    node_t *pDelete = pQueue->pBack;
-   
 }
 
 void showQueue(const queue_t *pQueue)

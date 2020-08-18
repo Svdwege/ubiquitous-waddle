@@ -22,7 +22,6 @@ int main(void)
 {
    int a = 2;
    int b = 10;
-   int i = 0;
    char text1[10] = "ABCD";
    char text2[10] = "abCD";
 
@@ -35,7 +34,7 @@ int main(void)
 
    printf("  isOK = %s\n\n", isOK ? "true" : "false");
 
-   for (i = 10; i < 16; i++)
+   for (int i = 10; i < 16; i++)
    {
       if (!isEven(i))
       {
@@ -67,9 +66,8 @@ bool stringIsAllUppercase(const char str[])
 {
    bool result = true;
    size_t size = strlen(str);
-   size_t i = 0;
 
-   for (i = 0; i < size; i++)
+   for (size_t i = 0; i < size; i++)
    {
       if (!isupper(str[i]))
       {
