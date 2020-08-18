@@ -2,21 +2,23 @@
 
 ## Intermediate level programming
 
-The code examples are used for teaching **C programming** at an intermediate level.
+The code examples are used for teaching C programming at an intermediate level.
+The examples are compilable by a C99 compiler.
 
 Each example is compilable using QtCreator by opening the related **.pro**
 file. This will create the related **Makefile** file.  
 
 Or compiling a Qt project by the command line, this also will create the related **Makefile** file:
 
-    $ qmake
-    $ make
+    qmake
+    
+    make
 
 To avoid the overwriting of a self-coded GNU Makefile by a QtCreator build step, we choose the name **Makefile2**.
 
 Compiling a GNU make project and the related **Makefile2** for gcc compiling C99:
 
-    $ make -f Makefile2
+    make -f Makefile2
 
 Some unit test code examples are available:
 
