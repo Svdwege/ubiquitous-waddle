@@ -36,8 +36,7 @@ int main(void)
 
 void print1DimArray(int ar1D[], size_t size)
 {
-   size_t i = 0;
-   for (i = 0; i < size; i++)
+   for (size_t i = 0; i < size; i++)
    {
       printf("%4d ", ar1D[i]);
    }
@@ -46,12 +45,9 @@ void print1DimArray(int ar1D[], size_t size)
 
 void print2DimArray(int ar2D[][MAX_COLUMN], size_t size)
 {
-   size_t i = 0;
-   size_t j = 0;
-
-   for (i = 0; i < size; i++)
+   for (size_t i = 0; i < size; i++)
    {
-      for (j = 0; j < MAX_COLUMN; j++)
+      for (size_t j = 0; j < MAX_COLUMN; j++)
       {
          printf("%4d ", ar2D[i][j]);
       }
@@ -61,15 +57,11 @@ void print2DimArray(int ar2D[][MAX_COLUMN], size_t size)
 
 void print3DimArray(int ar3D[][MAX_COLUMN][MAX_DEPTH], size_t size)
 {
-   size_t i = 0;
-   size_t j = 0;
-   size_t k = 0;
-
-   for (k = 0; k < MAX_DEPTH; k++)
+   for (size_t k = 0; k < MAX_DEPTH; k++)
    {
-      for (i = 0; i < size; i++)
+      for (size_t i = 0; i < size; i++)
       {
-         for (j = 0; j < MAX_COLUMN; j++)
+         for (size_t j = 0; j < MAX_COLUMN; j++)
          {
             printf("%4d ", ar3D[i][j][k]);
          }
