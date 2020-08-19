@@ -68,12 +68,6 @@ int compareData(const void *pD1, const void *pD2)
    if ((pData1->iData) == (pData2->iData))
    {
       return compareDoubles(pData1->dData, pData2->dData);
-      /* Next return is not correct for doubles, result is converted to int
-       * return pData1->dData - pData2->dData;
-       */
    }
-   return (pData1->iData) - (pData2->iData);
-   /* Or using compareInts()
-    * return compareInts(pData1->iData, pData2->iData);
-    */
+   return compareInts(pData1->iData, pData2->iData);
 }
