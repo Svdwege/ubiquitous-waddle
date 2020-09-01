@@ -2,7 +2,7 @@
 
 int main(void)
 {
-   printf("Hello world of build mananagement\n");
+   printf("Hello world of build management\n");
 
    return 0;
 }
