@@ -57,3 +57,9 @@ void minmaxScaling(float data[], int size, float min, float max)
       data[i] = A * data[i] + B;
    }
 }
+
+float inproduct(float data1[], float data2[], size_t size)
+{
+   
+   return 0;
+}

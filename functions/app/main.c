@@ -9,8 +9,8 @@ void showData(const float data[], size_t size);
 
 int main(void)
 {
-   float data1[SIZE1] = {-3.01, 1.05, 0.04,  -1.23, -2.5,
-                         1.234, -0.4, -0.23};
+   float data1[SIZE1] = {-3.01, 1.05,  0.04, -1.23,
+                         -2.5,  1.234, -0.4, -0.23};
    float data2[SIZE2] = {1.051, 0.0423, -1.2, -2.24, 2.234};
    minmax_t minmax1 = {0.0, 0.0};
    minmax_t minmax2 = {0.0, 0.0};
@@ -47,8 +47,11 @@ int main(void)
    printf("\n  data2 = ");
    showData(data2, SIZE2);
 
+   printf("\n\n  In-product data1 and data2 = %f\n",
+          inproduct(data1, data2, SIZE2));
+
    puts(
-      "\n\nProgram ready "
+      "\nProgram ready "
       "---------------------------------------\n");
 
    return 0;

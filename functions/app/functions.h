@@ -1,6 +1,8 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
+#include <stdlib.h>
+
 /** Contains a minimal value \p min and a related maximal value \p max. */
 typedef struct {
    float min;
@@ -54,5 +56,17 @@ void meanNormalisation(float data[], int size);
  * \todo unittest
  */
 void minmaxScaling(float data[], int size, float min, float max);
+
+/**
+ * Calculates  the in-product of two same sized arrays.
+ * 
+ * \param data1 array
+ * \param data2 array
+ * \param size array size
+ * \return float in-product value
+ * \todo implement
+ * \todo unittest
+ */
+float inproduct(float data1[], float data2[], size_t size);
 
 #endif // FUNCTIONS_H
