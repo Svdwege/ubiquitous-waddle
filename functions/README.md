@@ -6,34 +6,34 @@ See: [scaling](https://medium.com/greyatom/why-how-and-when-to-scale-your-featur
 
 ## meanNormalisation
 
-- a data set has an actual mean value $mean(xActual)$
-- the mean value should become 0 by mean normalisation $mean(xTarget) = 0$
+- a data set has an actual mean value *mean(xActual)*
+- the mean value should become 0 by mean normalisation *mean(xTarget) = 0*
 
-$$xTarget = (xActual - mean(xActual)) / (max(xActual) - min(xActual))$$
+- *xTarget = (xActual - mean(xActual)) / (max(xActual) - min(xActual))*
 
-The set of $xTarget$ values will have values between -1 and 1: $$-1 <= xTarget <= 1 $$
+The set of xTarget values will have values between -1 and 1: *-1 <= xTarget <= 1*
 
-$$ min(xTarget) >= -1$$
+- *min(xTarget) >= -1*
 
-$$ max(xTarget) <= 1$$
+- *max(xTarget) <= 1*
 
 ## minmaxScaling
 
-- a data set has values between $minActual$ and $maxActual$.
-- the data values must be scaled between the range $minTarget$ and $maxTarget$.
+- a data set has values between *minActual* and *maxActual*.
+- the data values must be scaled between the range *minTarget* and *maxTarget*.
 
-Solve A (scaling) and B (offset) by solving 2 equations:
+Solve **A** (scaling) and **B** (offset) by solving 2 equations:
 
-$$minTarget = A * minActual + B$$
+- *minTarget = A \* minActual + B*
 
-$$maxTarget = A * maxActual + B$$
+- *maxTarget = A * maxActual + B*
 
-First step eliminate B to find A:
+First step eliminate **B** to find **A**:
 
-$$minTarget - maxTarget = A * (minActual - maxActual)$$
+- *minTarget - maxTarget = A \* (minActual - maxActual)*
 
-$$A = (minTarget - maxTarget) / (minActual - maxActual)$$
+- *A = (minTarget - maxTarget) / (minActual - maxActual)*
 
-Second step find B:
+Second step find **B** using **A**:
 
-$$B = minTarget - (A * minActual)$$
+- *B = minTarget - (A \* minActual)*
