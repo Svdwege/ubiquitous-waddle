@@ -8,13 +8,13 @@ See: [scaling](https://medium.com/greyatom/why-how-and-when-to-scale-your-featur
 
 - a data set has an actual mean value *mean(xActual)*
 - the mean value should become 0 by mean normalisation *mean(xTarget) = 0*
-<br>
+
 - *xTarget = (xActual - mean(xActual)) / (max(xActual) - min(xActual))*
 
 The set of *xTarget* values will have values between *-1* and *1*:
 
 - *-1 <= xTarget <= 1*
-<br>
+
 - *min(xTarget) >= -1*
 
 - *max(xTarget) <= 1*
@@ -33,7 +33,7 @@ Solve **A** (scaling) and **B** (offset) by solving 2 equations:
 First step eliminate **B** to find **A**:
 
 - *minTarget - maxTarget = A \* (minActual - maxActual)*
-<br>
+
 - *A = (minTarget - maxTarget) / (minActual - maxActual)*
 
 Second step find **B** using **A**:
