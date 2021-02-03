@@ -34,7 +34,6 @@ Some *gdb* launches are available in [launch.json](.vscode/launch.json).
 
 ## Book and excercises
 
-The related book [Advanced C v2.0](BookExercises/AdvancedC-v2.0.pdf) is in pdf format available.
-**Advanced C v2.1 is in preparation.**
+The related book [Advanced C v2.1](BookExercises/AdvancedC-v2.1.pdf) is in pdf format available.
 
 Book exercises are partly prepared in the [BookExercises](BookExercises) subdirectory.
