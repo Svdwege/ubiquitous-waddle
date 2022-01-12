@@ -34,7 +34,6 @@ Some *gdb* launches are available in [launch.json](.vscode/launch.json).
 
 ## Book and excercises
 
+Theory can be found in [AdvancedCv3.0.pdf](./AdvancedCv3.0.pdf), the code as used in the exercises can be found in [BookExampleCode](./BookExampleCode).
+
 Lab exercis can be found in [LabExercisesADCv3.0.pdf](./LabExercisesADCv3.0.pdf), the code as used in the exercises can be found in [LabExercisesCode](./LabeExercisesCode).
-
-
-Book exercises are partly prepared in the [BookExercises](BookExercises) subdirectory.
