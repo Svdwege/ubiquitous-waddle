@@ -1,0 +1,18 @@
+C standard version is 199901
+Code compiled: Aug  5 2020 19:21:28
+         file: main.c
+         line: 34 in function: 'main'
+
+SQR(10) = 100
+OTHER_VALUE = 50
+i1 = 25
+i2 = 271
+i3 = 676
+i4 = 625
+v = 1.210000
+
+TEST 'v > 2.0' is not satisfied
+TEST 'i3 < 1 && i4 < 1' is not satisfied
+
+SQR(SQR(3)) = 81
+Warning: Macros can become complex, result 81

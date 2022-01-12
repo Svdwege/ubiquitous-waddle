@@ -1,0 +1,6 @@
+Second element of array b: 21
+
+Last element of array b: 67
+
+Second element of array b: 21
+Third element of array b: 15

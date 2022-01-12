@@ -1,0 +1,12 @@
+---- averageData()
+---------------------------------------------------------------------
+Functions
+  test_averageData
+---------------------------------------------------------------------
+functionTestsCatch2.cpp:37
+.....................................................................
+
+functionTestsCatch2.cpp:44: FAILED:
+  REQUIRE( result == Approx(1.0) )
+with expansion:
+  9.0f == Approx( 1.0 )

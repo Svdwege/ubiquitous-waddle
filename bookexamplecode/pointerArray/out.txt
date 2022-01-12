@@ -1,0 +1,13 @@
+stringData[0] = 0x55ffde45f858  points to "Hello"
+stringData[1] = 0x55ffde45f85e  points to "world"
+stringData[2] = 0x55ffde45f864  points to "of"
+stringData[3] = 0x55ffde45f867  points to "pointers"
+stringData[4] = 0x55ffde45f870  points to "in arrays"
+
+
+First character of every string:
+stringData[0][0] = 'H'
+stringData[1][0] = 'w'
+stringData[2][0] = 'o'
+stringData[3][0] = 'p'
+stringData[4][0] = 'i'

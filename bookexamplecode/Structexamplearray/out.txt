@@ -1,0 +1,5 @@
+ The fullname of persons[0] is: John Doe
+ John Doe lives in Rotterdam
+ Persons[1]: John van den Hooven also lives in Rotterdam
+ John Doe and John van den Hooven are neighbours
+ All zipcodes are 3011AA, 3011AA and 3011AA

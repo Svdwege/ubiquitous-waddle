@@ -1,0 +1,6 @@
+String text1 is: Greetings
+String text2 is:  Professor
+
+Concatenated strings: Greetings Professor
+Concatenated strings: Greetings Professor Falken
+Press <RETURN> to close this window...

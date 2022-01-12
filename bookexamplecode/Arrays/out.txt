@@ -1,0 +1,11 @@
+First element of array b: 22
+Second element of array b: 21
+Fourth element of array b: 12
+Last element of array b: 67
+
+Second element of array b: 5
+Third element of array b: 39
+
+Second element of array b: 5
+
+Last element of array b: 6

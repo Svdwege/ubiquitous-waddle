@@ -1,15 +1,15 @@
-#include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-bool compareIntArrays(const int arr1[], const int arr2[], int size);
+void hexdumpLong(long data);
 
 int main(void)
 {
-
+   
    return 0;
 }
 
-bool compareIntArrays(const int arr1[], const int arr2[], int size);
+void hexdumpLong(long data)
 {
-#warning function averageDdata() needs to be implemented!
+
 }

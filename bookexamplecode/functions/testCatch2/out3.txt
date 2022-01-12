@@ -1,0 +1,30 @@
+---- meanNormalisation()
+---------------------------------------------------------------------
+Functions
+  test_meanNormalisation
+---------------------------------------------------------------------
+functionTestsCatch2.cpp:48
+.....................................................................
+
+functionTestsCatch2.cpp:57: FAILED:
+  REQUIRE( result.min == Approx(-1.0) )
+with expansion:
+  inff == Approx( -1.0 )
+
+
+---- minmaxScaling()
+---------------------------------------------------------------------
+Functions
+  test_minmaxScaling
+---------------------------------------------------------------------
+functionTestsCatch2.cpp:76
+.....................................................................
+
+functionTestsCatch2.cpp:86: FAILED:
+  REQUIRE( findMinMax(data1, 4).min == Approx(mind) )
+with expansion:
+  5.0f == Approx( -2.0 )
+
+=====================================================================
+test cases: 1 | 1 failed
+assertions: 7 | 3 passed | 4 failed

@@ -1,0 +1,16 @@
+ Size pointer variable pI = 8 bytes
+ Size pointer variable pD = 8 bytes
+ Size pointer variable pC = 8 bytes
+
+ pI 0x7ffd854000bc points to 1
+ pD 0x7ffd854000c0 points to 2.200000
+ pC 0x7ffd854000bb points to 'A'
+
+ pData = data;  pData 0x7ffd854000f0 points to 1
+ pData++;       pData 0x7ffd854000f4 points to 2
+ pData += 3;    pData 0x7ffd85400100 points to 5
+
+ pData points to data[4] = 5
+
+ ERROR: pData accessing 'data' out of bounds
+ 

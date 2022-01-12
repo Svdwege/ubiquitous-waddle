@@ -1,0 +1,17 @@
+=== Unity unit tests 'functions' module ===
+
+---- findMinMax()
+testMain.c:37:test_findMinMax:FAIL: Expected -1 Was 3. Minimum value not ok
+
+---- averageData()
+testMain.c:59:test_averageData:FAIL: Expected 1 Was 9. Average not ok
+
+---- meanNormalisation()
+testMain.c:74:test_meanNormalisation:FAIL: result.max <= 1.0 is not ok.
+
+---- minmaxScaling()
+testMain.c:101:test_minmaxScaling:FAIL: Expected -2 Was 5. Minimum value not ok
+
+-----------------------
+4 Tests 4 Failures 0 Ignored 
+FAIL

@@ -1,0 +1,15 @@
+SLL is empty
+Size of the SLL = 0
+
+Add new data to the SLL 0x(nil):
+Node 0x560b9e045270:  Data = 10  pNext = (nil)
+Size of the SLL = 0
+
+Add new data to the SLL 0x0x560b9e045270:
+Node 0x560b9e045270:  Data = 10  pNext = 0x560b9e045290
+Node 0x560b9e045290:  Data = 20  pNext = (nil)
+Size of the SLL = 0
+
+Clear the SLL 0x0x560b9e045270:
+SLL is empty
+Size of the SLL = 0

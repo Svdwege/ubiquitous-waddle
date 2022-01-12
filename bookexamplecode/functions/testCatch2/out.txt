@@ -1,0 +1,64 @@
+---- findMinMax()
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+testCatch2 is a Catch v2.13.0 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Functions
+  test_findMinMax
+-------------------------------------------------------------------------------
+functionTestsCatch2.cpp:17
+...............................................................................
+
+functionTestsCatch2.cpp:32: FAILED:
+  REQUIRE( result.min == Approx(-1.0) )
+with expansion:
+  3.0f == Approx( -1.0 )
+
+
+---- averageData()
+-------------------------------------------------------------------------------
+Functions
+  test_averageData
+-------------------------------------------------------------------------------
+functionTestsCatch2.cpp:37
+...............................................................................
+
+functionTestsCatch2.cpp:44: FAILED:
+  REQUIRE( result == Approx(1.0) )
+with expansion:
+  9.0f == Approx( 1.0 )
+
+
+---- meanNormalisation()
+-------------------------------------------------------------------------------
+Functions
+  test_meanNormalisation
+-------------------------------------------------------------------------------
+functionTestsCatch2.cpp:48
+...............................................................................
+
+functionTestsCatch2.cpp:57: FAILED:
+  REQUIRE( result.min == Approx(-1.0) )
+with expansion:
+  inff == Approx( -1.0 )
+
+
+---- minmaxScaling()
+-------------------------------------------------------------------------------
+Functions
+  test_minmaxScaling
+-------------------------------------------------------------------------------
+functionTestsCatch2.cpp:76
+...............................................................................
+
+functionTestsCatch2.cpp:86: FAILED:
+  REQUIRE( findMinMax(data1, 4).min == Approx(mind) )
+with expansion:
+  5.0f == Approx( -2.0 )
+
+===============================================================================
+test cases: 1 | 1 failed
+assertions: 7 | 3 passed | 4 failed
+

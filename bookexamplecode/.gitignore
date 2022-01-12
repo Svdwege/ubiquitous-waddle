@@ -1,0 +1,40 @@
+# C
+depend
+Makefile
+*.o
+
+# Doxygen
+html
+
+# Excutables
+pointerVariables/pointerVariables
+qsort-ints/qsort-ints
+argcargv-isInt/argcargvIsInt
+arraySize/arraySize
+atexit/atexit
+averageDdata/averageDdata
+bool/bool
+callback/callback
+checkStrings/app/checkStrings
+checkStrings/test/checkStrings-test
+compare/compare
+complex/complex
+complex-tgmath/complextgmath
+echo-argcargv-forloop/echo-argc-argv
+echo-argcargv-whileloop/echo-argvargv-whileloop
+function-pointers/function-pointers
+functions/app/functions
+functions/testUnity/testUnity
+functions/testCatch2/testCatch2
+hexdump/hexdump
+macros/macros
+mixedtypes/mixedtypes
+multidimArrays/multidimArrays
+pointerArray/pointerArray
+qsort/qsort
+queueCSLL/app/queueCSLL
+singlyLinkedList/app/singlyLinkedList
+static/static
+swap/swap
+testMaxAllocation/testMaxAllocation
+voidPointers/voidPointers
