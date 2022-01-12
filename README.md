@@ -34,7 +34,6 @@ Some *gdb* launches are available in [launch.json](.vscode/launch.json).
 
 ## Book and excercises
 
-The related book [AdvancedCv3.0](./AdvancedCv3.0.pdf) is in pdf format available, the code as used in the examples of this book can be found in [bookexamplecode](./BookExamplecode).
 Lab exercis can be found in [LabExercisesADCv3.0.pdf](./LabExercisesADCv3.0.pdf), the code as used in the exercises can be found in [LabExercisesCode](./LabeExercisesCode).
 
 
