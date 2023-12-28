@@ -11,7 +11,7 @@
 #include <stdio.h>
 
 #undef TEST_ASSERT_MESSAGE
-#define TEST_ASSERT_MESSAGE(condition)                                         \
+#define TEST_ASSERT_MESSAGE(condition)                                    \
    UNITY_TEST_ASSERT(condition, __LINE__, #condition " is not ok.");
 
 const float DELTA = 0.001f;
@@ -49,14 +49,16 @@ void test_averageData(void)
       float data1[1] = {1.0};
       float result = averageData(data1, 1);
 
-      TEST_ASSERT_FLOAT_WITHIN_MESSAGE(DELTA, 1.0, result, "Average not ok");
+      TEST_ASSERT_FLOAT_WITHIN_MESSAGE(DELTA, 1.0, result,
+                                       "Average not ok");
    }
 
    {
       float data2[5] = {1.0, 1.0, 1.0, 1.0, 1.0};
       float result = averageData(data2, 5);
 
-      TEST_ASSERT_FLOAT_WITHIN_MESSAGE(DELTA, 1.0, result, "Average not ok");
+      TEST_ASSERT_FLOAT_WITHIN_MESSAGE(DELTA, 1.0, result,
+                                       "Average not ok");
    }
 }
 

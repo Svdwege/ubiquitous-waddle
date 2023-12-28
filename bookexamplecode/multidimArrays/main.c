@@ -27,8 +27,8 @@ int main(void)
    printf("\n---- 2 dimensional array (%d x %d):\n", MAX_ROW, MAX_COLUMN);
    print2DimArray(data2D, MAX_ROW);
 
-   printf("\n---- 3 dimensional array (%d x %d x %d):\n", MAX_ROW, MAX_COLUMN,
-          MAX_DEPTH);
+   printf("\n---- 3 dimensional array (%d x %d x %d):\n", MAX_ROW,
+          MAX_COLUMN, MAX_DEPTH);
    print3DimArray(data3D, MAX_ROW);
 
    return 0;

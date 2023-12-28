@@ -26,7 +26,7 @@ int main(void)
    {
       puts("  values are not swapped\n");
    }
-   
+
    /* Call by reference: using pointers */
    swap(&x, &y);
    printf("swap(&x, &y);       x = %d  y = %d", x, y);

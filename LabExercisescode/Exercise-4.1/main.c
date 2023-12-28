@@ -9,21 +9,19 @@
  * calculator
  * complete the program:
  *
- * 1) add the functions and text ("sub" , "add" , "div" , "mul" ) to the array
- * 2) test the program
+ * 1) add the functions and text ("sub" , "add" , "div" , "mul" ) to the
+ * array 2) test the program
  *
-*/ 
-
+ */
 
 /*!
  *  definition of a struct that holds the name of the operation (name)
- *  and a pointer (ope) that holds a pointer to the function that handles the
- *  operation
-*/
+ *  and a pointer (ope) that holds a pointer to the function that handles
+ * the operation
+ */
 /// ope should hold the pointer to a function tha belongs to an operation
-typedef struct
-{
-   int ope;      /// Change ope to the correct definition
+typedef struct {
+   int (*ope)(int, int); /// Change ope to the correct definition
    char name[10];
 } operation;
 
@@ -38,8 +36,7 @@ int sub(int num1, int num2);
 int mult(int num1, int num2);
 int divd(int num1, int num2);
 
-
-int main() 
+int main()
 {
    int x, y, choice, result;
    /// Array that contains the function and information for the operations
@@ -47,14 +44,14 @@ int main()
    /// Replace the contents of the array below with the correct
    /// assignments for each operation
    ///
-   operations[0].ope = NULL;
-   strcpy(operations[0].name, "");
-   operations[1].ope = NULL;
-   strcpy(operations[1].name, "");
-   operations[2].ope = NULL;
-   strcpy(operations[2].name, "");
-   operations[3].ope = NULL;
-   strcpy(operations[3].name, "");
+   operations[0].ope = &sum;
+   strcpy(operations[0].name, "add");
+   operations[1].ope = &sub;
+   strcpy(operations[1].name, "subtract");
+   operations[2].ope = &mult;
+   strcpy(operations[2].name, "multiply");
+   operations[3].ope = &divd;
+   strcpy(operations[3].name, "divide");
 
    printf("Enter two integer numbers (on one line: ");
    scanf("%d%d", &x, &y);
@@ -63,32 +60,33 @@ int main()
    scanf("%d", &choice);
 
    if (operations[choice].ope != NULL && choice <= 3)
-     {
-       result = (operations[choice].ope)(x, y);
-       printf("Operation: %s  result: %d\n ", operations[choice].name, result);
-     }
+   {
+      result = (operations[choice].ope)(x, y);
+      printf("Operation: %s  result: %d\n ", operations[choice].name,
+             result);
+   }
    else
-     {
-       printf("Function not available\n");
-       exit(1);
-     }
+   {
+      printf("Function not available\n");
+      exit(1);
+   }
 
    return 0;
 }
 
 int sum(int x, int y)
 {
-   return(x + y);
+   return (x + y);
 }
 
 int sub(int x, int y)
 {
-   return(x - y);
+   return (x - y);
 }
 
 int mult(int x, int y)
 {
-   return(x * y);
+   return (x * y);
 }
 
 int divd(int x, int y)

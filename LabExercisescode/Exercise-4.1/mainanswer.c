@@ -9,21 +9,19 @@
  * calculator
  * complete the program:
  *
- * 1) add the functions and text ("sub" , "add" , "div" , "mul" ) to the array
- * 2) test the program
+ * 1) add the functions and text ("sub" , "add" , "div" , "mul" ) to the
+ * array 2) test the program
  *
-*/ 
-
+ */
 
 /*!
  *  definition of a struct that holds the name of the operation (name)
- *  and a pointer (ope) that holds a pointer to the function that handles the
- *  operation
-*/
+ *  and a pointer (ope) that holds a pointer to the function that handles
+ * the operation
+ */
 /// ope should hold the pointer to a function tha belongs to an operation
-typedef struct
-{
-   int (* ope)(int,int);      /// Change ope to the correct definition
+typedef struct {
+   int (*ope)(int, int); /// Change ope to the correct definition
    char name[10];
 } operation;
 
@@ -38,8 +36,7 @@ int sub(int num1, int num2);
 int mult(int num1, int num2);
 int divd(int num1, int num2);
 
-
-int main() 
+int main()
 {
    int x, y, choice, result;
    /// Array that contains the function and information for the operations
@@ -63,32 +60,33 @@ int main()
    scanf("%d", &choice);
 
    if (operations[choice].ope != NULL && choice <= 3)
-     {
-       result = (operations[choice].ope)(x, y);
-       printf("Operation: %s  result: %d\n ", operations[choice].name, result);
-     }
+   {
+      result = (operations[choice].ope)(x, y);
+      printf("Operation: %s  result: %d\n ", operations[choice].name,
+             result);
+   }
    else
-     {
-       printf("Function not available\n");
-       exit(1);
-     }
+   {
+      printf("Function not available\n");
+      exit(1);
+   }
 
    return 0;
 }
 
 int sum(int x, int y)
 {
-   return(x + y);
+   return (x + y);
 }
 
 int sub(int x, int y)
 {
-   return(x - y);
+   return (x - y);
 }
 
 int mult(int x, int y)
 {
-   return(x * y);
+   return (x * y);
 }
 
 int divd(int x, int y)

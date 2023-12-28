@@ -20,7 +20,8 @@ int main(void)
       printf(
          "uiA < iC\n"
          "iC = %d is casted to unsigned int: %u\n"
-         "Mixed type expression causes: 123 < -567 to be true\n\n", iC, iC);
+         "Mixed type expression causes: 123 < -567 to be true\n\n",
+         iC, iC);
    }
    else
    {

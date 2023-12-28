@@ -22,6 +22,13 @@ int main(void)
 
 void averageDdata(double data[], int size)
 {
-#warning function averageDdata() needs to be implemented!
-}
+   // #warning function averageDdata() needs to be implemented!
+   double sum = 0.0;
+   for (int i = 0; i < size; i++)
+   {
+      sum = (sum + data[i]);
+   }
 
+   for (int i = 0; i < size; i++)
+      data[i] = sum / size;
+}

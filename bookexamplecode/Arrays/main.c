@@ -3,8 +3,8 @@
 
 int main(void)
 {
-   int a[20];           // an array with 20 elements of type integer
-   int b[6] = { 22, 21, 43, 12, 13, 67}; // an array with 6 elements
+   int a[20]; // an array with 20 elements of type integer
+   int b[6] = {22, 21, 43, 12, 13, 67}; // an array with 6 elements
    double c[4];
    double d[3] = {12.6, 4.5, 6.7};
 
@@ -27,7 +27,8 @@ int main(void)
    b[1] = 5.6;
    printf("Second element of array b: %d\n\n", b[1]);
 
-   /* another example next line will also give a compiler warning or error! */
+   /* another example next line will also give a compiler warning or error!
+    */
    b[5] = d[2];
    printf("Last element of array b: %d\n", b[5]);
 

@@ -16,7 +16,7 @@ int main(void)
    printf(
       "-- double atof(const char *str);\n"
       "-- Printing doubles:\n");
-      
+
    printf("   123.012    => %11lf \n", atof("123.012"));
    printf("   123.012abc => %11lf \n", atof("123.012abc"));
    printf("   123        => %11lf \n", atof("123"));

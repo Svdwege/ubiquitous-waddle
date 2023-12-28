@@ -28,10 +28,11 @@ int main(void)
 
    /* Standard predefined macros */
    printf("C standard version is %ld\n", __STDC_VERSION__);
-   printf("Code compiled: %s %s\n"
-          "         file: %s\n"
-          "         line: %d in function: '%s'\n\n",
-          __DATE__, __TIME__, __FILE__, __LINE__, __func__);
+   printf(
+      "Code compiled: %s %s\n"
+      "         file: %s\n"
+      "         line: %d in function: '%s'\n\n",
+      __DATE__, __TIME__, __FILE__, __LINE__, __func__);
 
    PRINT_VALUE(d, SQR(10));
    PRINT_VALUE(d, OTHER_VALUE);
@@ -41,7 +42,7 @@ int main(void)
    PRINT_VALUE(d, i4);
    PRINT_VALUE(lf, v);
    puts("");
-   
+
    TEST(v > 2.0);
    TEST(i3 < 1 && i4 < 1);
    puts("");

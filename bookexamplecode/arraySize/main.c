@@ -36,7 +36,7 @@ void printArraySize(const double b[])
 
    size_t size = sizeof(b) / sizeof(b[0]);
    printf("Number of data values in array b = %zu  ", size);
-   
+
    if (size != ARRAYSIZE)
    {
       printf("is not correct\n");

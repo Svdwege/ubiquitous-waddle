@@ -15,5 +15,7 @@ int main(void)
 
 void average2D(double *pD1, double *pD2)
 {
-#warning function average2D() needs to be implemented!
+   *pD1 = (*pD1 + *pD2) / 2.0;
+   *pD2 = *pD1;
+   // #warning function average2D() needs to be implemented!
 }

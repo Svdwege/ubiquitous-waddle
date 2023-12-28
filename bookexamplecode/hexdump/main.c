@@ -32,7 +32,7 @@ int main(void)
 int isLittleEndian(void)
 {
    const int test = 1;
-   const unsigned char* pByte = (const unsigned char*)&test;
+   const unsigned char *pByte = (const unsigned char *)&test;
 
    return pByte[0] == 1;
 }
