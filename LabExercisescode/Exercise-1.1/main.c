@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-typedef struct
-{
+typedef struct {
    int element1;
    char element2;
 } data_t;
@@ -16,7 +15,7 @@ data_t array[N_ARRAY];
 
 int main(void)
 {
-   for(int n=0; n<N_ARRAY; ++n)
+   for (int n = 0; n < N_ARRAY; ++n)
    {
       fillStruct(&array[n]);
       printStruct(&array[n]);
@@ -33,20 +32,18 @@ void fillStruct(data_t *data)
    data->element1 = n;
    data->element2 = c;
 
-   n = (n == 26) ? 1 : (n+1);
-   c = (c == 'Z') ? 'A' : (c+1);
+   n = (n == 26) ? 1 : (n + 1);
+   c = (c == 'Z') ? 'A' : (c + 1);
 }
 
 void printStruct(const data_t *data)
 {
-
-      // Implement function printStruct
-
+   // Implement function printStruct
+   printf("%d %c\n", data->element1, data->element2);
 }
 
 void clearStruct(data_t *data)
 {
-
-      // Implement function clearStruct
-
+   data->element1 = 0;
+   data->element2 = 0;
 }
