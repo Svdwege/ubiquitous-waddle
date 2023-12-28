@@ -5,9 +5,9 @@
 size_t sizeSLL(const node_t *pHead) {
   const node_t *pNext = pHead;
   size_t        size  = 0;
-
-  if (pHead != NULL) {
-    /* Needs to be implemented */
+  while (pHead != NULL) {
+    size++;
+    pHead = pHead->pNextNode;
   }
   return size;
 }
