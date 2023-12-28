@@ -5,12 +5,11 @@
 
 /*! SLL node, data is 1 int */
 typedef struct node {
-   int data;
-   struct node *pNextNode;
+  int          data;
+  struct node *pNextNode;
 } node_t;
 
 /*! Returns the size of the SLL (equals the number of nodes).
- * \todo Implement function.
  */
 size_t sizeSLL(const node_t *pHead);
 
@@ -22,8 +21,8 @@ void addSLL(node_t **ppHead, int data);
  */
 void clearSLL(node_t **ppHead);
 
-/*! Shows in ASCII the contents of all nodes from the head to the end 
- * of the list. 
+/*! Shows in ASCII the contents of all nodes from the head to the end
+ * of the list.
  */
 void showSLL(const node_t *pHead);
 
