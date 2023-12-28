@@ -3,11 +3,7 @@
 
 bool compareIntArrays(const int arr1[], const int arr2[], int size);
 
-int main(void)
-{
-
-   return 0;
-}
+int main(void) { return 0; }
 
 bool compareIntArrays(const int arr1[], const int arr2[], int size);
 {

@@ -12,37 +12,32 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int argc, char *argv[])
-{
-   /* Always check the number of required arguments */
-   if (argc < 2)
-   {
-      /* Error messages to stderr */
-      fprintf(stderr,
-              "\tERROR %s: \n"
-              "\tUSAGE: expected 1 or more commandline parameters\n\n",
-              argv[0]);
-      exit(EXIT_FAILURE);
-   }
+int main(int argc, char *argv[]) {
+  /* Always check the number of required arguments */
+  if (argc < 2) {
+    /* Error messages to stderr */
+    fprintf(stderr,
+            "\tERROR %s: \n"
+            "\tUSAGE: expected 1 or more commandline parameters\n\n",
+            argv[0]);
+    exit(EXIT_FAILURE);
+  }
 
-   /* Print all command line arguments */
-   for (int i = 1; i < argc; i++)
-   {
-      printf("- argv[%d]: %s\n", i, argv[i]);
-   }
-   puts("\n");
+  /* Print all command line arguments */
+  for (int i = 1; i < argc; i++) {
+    printf("- argv[%d]: %s\n", i, argv[i]);
+  }
+  puts("\n");
 
-   /* Print the third character of all command line arguments if available
-    */
-   for (int i = 1; i < argc; i++)
-   {
-      /* Check for availability third character */
-      if (strlen(argv[i]) > 2)
-      {
-         printf("- argv[%d][2]: %c\n", i, argv[i][2]);
-      }
-   }
-   puts("\n");
+  /* Print the third character of all command line arguments if available
+   */
+  for (int i = 1; i < argc; i++) {
+    /* Check for availability third character */
+    if (strlen(argv[i]) > 2) {
+      printf("- argv[%d][2]: %c\n", i, argv[i][2]);
+    }
+  }
+  puts("\n");
 
-   return 0;
+  return 0;
 }

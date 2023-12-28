@@ -21,8 +21,8 @@
  */
 /// ope should hold the pointer to a function tha belongs to an operation
 typedef struct {
-   int (*ope)(int, int); /// Change ope to the correct definition
-   char name[10];
+  int (*ope)(int, int); /// Change ope to the correct definition
+  char name[10];
 } operation;
 
 /*!
@@ -36,67 +36,49 @@ int sub(int num1, int num2);
 int mult(int num1, int num2);
 int divd(int num1, int num2);
 
-int main()
-{
-   int x, y, choice, result;
-   /// Array that contains the function and information for the operations
-   operation operations[4];
-   /// Replace the contents of the array below with the correct
-   /// assignments for each operation
-   ///
-   operations[0].ope = &sum;
-   strcpy(operations[0].name, "Som");
-   operations[1].ope = &sub;
-   strcpy(operations[1].name, "Verschil");
-   operations[2].ope = &mult;
-   strcpy(operations[2].name, "Vermenivuldiging");
-   operations[3].ope = &divd;
-   strcpy(operations[3].name, "Deling");
+int main() {
+  int x, y, choice, result;
+  /// Array that contains the function and information for the operations
+  operation operations[4];
+  /// Replace the contents of the array below with the correct
+  /// assignments for each operation
+  ///
+  operations[0].ope = &sum;
+  strcpy(operations[0].name, "Som");
+  operations[1].ope = &sub;
+  strcpy(operations[1].name, "Verschil");
+  operations[2].ope = &mult;
+  strcpy(operations[2].name, "Vermenivuldiging");
+  operations[3].ope = &divd;
+  strcpy(operations[3].name, "Deling");
 
-   printf("Enter two integer numbers (on one line): ");
-   scanf("%d%d", &x, &y);
+  printf("Enter two integer numbers (on one line): ");
+  scanf("%d%d", &x, &y);
 
-   printf("Enter:\n0 to sum\n1 to subtract\n2 to multiply\n3 to divide\n");
-   scanf("%d", &choice);
+  printf("Enter:\n0 to sum\n1 to subtract\n2 to multiply\n3 to divide\n");
+  scanf("%d", &choice);
 
-   if (operations[choice].ope != NULL && choice <= 3)
-   {
-      result = (operations[choice].ope)(x, y);
-      printf("Operation: %s  result: %d\n ", operations[choice].name,
-             result);
-   }
-   else
-   {
-      printf("Function not available\n");
-      exit(1);
-   }
+  if (operations[choice].ope != NULL && choice <= 3) {
+    result = (operations[choice].ope)(x, y);
+    printf("Operation: %s  result: %d\n ", operations[choice].name, result);
+  } else {
+    printf("Function not available\n");
+    exit(1);
+  }
 
-   return 0;
+  return 0;
 }
 
-int sum(int x, int y)
-{
-   return (x + y);
-}
+int sum(int x, int y) { return (x + y); }
 
-int sub(int x, int y)
-{
-   return (x - y);
-}
+int sub(int x, int y) { return (x - y); }
 
-int mult(int x, int y)
-{
-   return (x * y);
-}
+int mult(int x, int y) { return (x * y); }
 
-int divd(int x, int y)
-{
-   if (y != 0)
-   {
-      return (x / y);
-   }
-   else
-   {
-      return 0;
-   }
+int divd(int x, int y) {
+  if (y != 0) {
+    return (x / y);
+  } else {
+    return 0;
+  }
 }

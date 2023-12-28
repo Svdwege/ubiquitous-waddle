@@ -1,8 +1,7 @@
 #include <stdio.h>
 
-int main(void)
-{
-   printf("Hello world of build management\n");
+int main(void) {
+  printf("Hello world of build management\n");
 
-   return 0;
+  return 0;
 }

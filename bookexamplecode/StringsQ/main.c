@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void)
-{
-   char s1[] = "Hello";
-   char s2[] = "Bye";
-   char s3[] = "Hoi";
-   int result = 0;
+int main(void) {
+  char s1[]   = "Hello";
+  char s2[]   = "Bye";
+  char s3[]   = "Hoi";
+  int  result = 0;
 
    result = strlen(???);
    printf("length of s1 is %d\n\n", result);

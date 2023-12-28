@@ -11,30 +11,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[])
-{
-   int i = 0;
+int main(int argc, char *argv[]) {
+  int i = 0;
 
-   /* Always check the number of required arguments */
-   if (argc < 2)
-   {
-      /* Error messages to stderr */
-      fprintf(stderr,
-              "\tERROR %s: \n"
-              "\tUSAGE: expected 1 or more commandline parameters\n\n",
-              argv[0]);
-      exit(EXIT_FAILURE);
-   }
+  /* Always check the number of required arguments */
+  if (argc < 2) {
+    /* Error messages to stderr */
+    fprintf(stderr,
+            "\tERROR %s: \n"
+            "\tUSAGE: expected 1 or more commandline parameters\n\n",
+            argv[0]);
+    exit(EXIT_FAILURE);
+  }
 
-   /* Print all command line arguments */
-   i = 1;
-   while (argv[i] != NULL)
-   {
-      printf("- argv[%d]: %s\n", i, argv[i]);
-      i++;
-   }
-   printf("- argv[%d]: %s\n", i, argv[i]);
-   puts("\n");
+  /* Print all command line arguments */
+  i = 1;
+  while (argv[i] != NULL) {
+    printf("- argv[%d]: %s\n", i, argv[i]);
+    i++;
+  }
+  printf("- argv[%d]: %s\n", i, argv[i]);
+  puts("\n");
 
-   return 0;
+  return 0;
 }
