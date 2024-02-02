@@ -30,18 +30,19 @@ int main(void) {
     printf("Back  text:   %s\n", backQueue(&queue)->text);
     printf("Size queue:   %lu\n", sizeQueue(&queue));
   }
+  /*j
+    printf("\nPop queue\n");
+    popQueue(&queue);
+    showQueue(&queue);
 
-  printf("\nPop queue\n");
-  popQueue(&queue);
-  showQueue(&queue);
+    printf("\nPop queue\n");
+    popQueue(&queue);
+    showQueue(&queue);
 
-  printf("\nPop queue\n");
-  popQueue(&queue);
-  showQueue(&queue);
-
-  printf("\nPop queue\n");
-  popQueue(&queue);
-  showQueue(&queue);
-
+    printf("\nPop queue\n");
+    popQueue(&queue);
+    showQueue(&queue);
+  */
+  deleteQueue(&queue);
   return 0;
 }

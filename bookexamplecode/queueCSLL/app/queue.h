@@ -9,16 +9,16 @@
  * This struct must not contain pointers pointing outside the struct.
  */
 typedef struct {
-   int intVal;
-   char text[TEXT_SIZE];
+  int  intVal;
+  char text[TEXT_SIZE];
 } data_t;
 
 /*!
  * Node for the circular linear linked list (singly linked list).
  */
 typedef struct node {
-   data_t data;
-   struct node *pNextNode;
+  data_t       data;
+  struct node *pNextNode;
 } node_t;
 
 /*!
@@ -33,14 +33,14 @@ typedef struct node {
  * (circular data structure).
  */
 typedef struct {
-   node_t *pBack;
-   /*! node_t *pFront; only necessary for SLL implementation. */
+  node_t *pBack;
+  /*! node_t *pFront; only necessary for SLL implementation. */
 } queue_t;
 
 /*!
  * Creates queue with one node containing data.
  */
-void createQueue(queue_t *pQueue, data_t data);
+int createQueue(queue_t *pQueue, data_t data);
 /*!
  * Checks is queue is empty.
  * \return 1 if empty else 0
@@ -63,7 +63,7 @@ data_t *backQueue(const queue_t *pQueue);
  * Push new data to the back of the queue.
  * \pre pQueue != NULL
  */
-void pushQueue(queue_t *pQueue, data_t data);
+int pushQueue(queue_t *pQueue, data_t data);
 /*!
  * Remove data from the front of the queue.
  * \pre pQueue != NULL, size >= 1
