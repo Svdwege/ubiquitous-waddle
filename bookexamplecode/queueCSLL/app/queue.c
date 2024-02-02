@@ -18,6 +18,11 @@ size_t sizeQueue(const queue_t *pQueue) {
   size_t size = 0;
   /* local pointer for traversing all nodes in queue */
   const node_t *pSize = pQueue->pBack;
+  node_t       *pTemp = pSize;
+  do {
+    size++;
+    pTemp = pTemp->pNextNode;
+  } while (pTemp != pSize);
 
   return size;
 }

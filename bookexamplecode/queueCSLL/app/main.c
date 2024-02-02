@@ -28,6 +28,7 @@ int main(void) {
     printf("Front text:   %s\n", frontQueue(&queue)->text);
     printf("Back  iValue: %d\n", backQueue(&queue)->intVal);
     printf("Back  text:   %s\n", backQueue(&queue)->text);
+    printf("Size queue:   %lu\n", sizeQueue(&queue));
   }
 
   printf("\nPop queue\n");
