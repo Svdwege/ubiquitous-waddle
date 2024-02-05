@@ -10,6 +10,7 @@ typedef struct node {
 } node_t;
 
 /*! Returns the size of the SLL (equals the number of nodes).
+ * O(n)
  */
 size_t sizeSLL(const node_t *pHead);
 

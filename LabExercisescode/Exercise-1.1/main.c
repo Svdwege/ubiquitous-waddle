@@ -18,6 +18,9 @@ int main(void) {
     fillStruct(&array[n]);
     printStruct(&array[n]);
   }
+  for (int n = 0; n < N_ARRAY; ++n) {
+    clearStruct(&array[n]);
+  }
 
   return 0;
 }
