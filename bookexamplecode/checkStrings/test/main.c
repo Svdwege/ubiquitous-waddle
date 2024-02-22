@@ -48,8 +48,8 @@ void test_isInteger(void) {
 
 void test_isMACaddress(void) {
   printf("\n---- isMACaddress()\n");
-
-  TEST_FAIL_MESSAGE("Tests not yet implemented");
+  TEST_ASSERT_TRUE_MESSAGE(isMACaddress("00:00:00:00:00:00"), "test 1");
+  // TEST_FAIL_MESSAGE("Tests not yet implemented");
 }
 
 int main(void) {
