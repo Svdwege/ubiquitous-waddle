@@ -47,13 +47,14 @@ void test_averageData(void) {
     float data1[1] = {1.0};
     float result   = averageData(data1, 1);
 
+    printf("%f\n", result);
     TEST_ASSERT_FLOAT_WITHIN_MESSAGE(DELTA, 1.0, result, "Average not ok");
   }
 
   {
     float data2[5] = {1.0, 1.0, 1.0, 1.0, 1.0};
     float result   = averageData(data2, 5);
-
+    printf("%f\n", result);
     TEST_ASSERT_FLOAT_WITHIN_MESSAGE(DELTA, 1.0, result, "Average not ok");
   }
 }
@@ -65,7 +66,10 @@ void test_meanNormalisation(void) {
     float data1[5] = {0.0, 2.0, 0.0, -2.0, 0.0};
 
     meanNormalisation(data1, 5);
+    printf("%f,%f,%f,%f,%f", data1[0], data1[1], data1[2], data1[3], data1[4]);
     minmax_t result = findMinMax(data1, 5);
+    printf("min %f\n", result.min);
+    printf("max %f\n", result.max);
 
     TEST_ASSERT_MESSAGE(result.min >= 1.0);
     TEST_ASSERT_MESSAGE(result.max <= 1.0);
@@ -78,6 +82,8 @@ void test_meanNormalisation(void) {
     meanNormalisation(data2, 5);
     minmax_t result = findMinMax(data2, 5);
 
+    printf("min %f\n", result.min);
+    printf("max %f\n", result.max);
     TEST_ASSERT(result.min >= -1.0);
     TEST_ASSERT(result.max <= 1.0);
     TEST_ASSERT_FLOAT_WITHIN(DELTA, 0.0, averageData(data2, 5));
